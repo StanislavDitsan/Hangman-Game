@@ -12,3 +12,8 @@ words = [
     "mole",
     "tablet",
 ]
+correct_letters = []
+incorrect_letters = []
+tries = 6 
+right_answers = 0 
+game_over = False
