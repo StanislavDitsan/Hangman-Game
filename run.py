@@ -18,6 +18,22 @@ tries = 6
 right_answers = 0
 game_over = False
 
+""" User name input - accepts only letters"""
+name_input = ''
+
+while True:
+    name_input = input("Enter Your Name: ")
+
+    if not name_input.isalpha():
+        print('Enter only Letters!\n')
+        continue
+    else:
+        break
+
+print("\nHello", name_input, "\nWelcome to Hangman Game!\n")
+print("Try to guess the word in under six attempts!")
+print("---------------------------------------------")
+
 
 def print_hangman(wrong):
     if wrong == 0:
@@ -153,12 +169,12 @@ word, unique_letters = choose_word(words)
 """Calling the functions by Joining the functions"""
 
 while not game_over:
-    print("\n" + "*" * 20 + "\n")
+    print("\n" + "^" * 20 + "\n")
     show_new_board(word)
     print("\n")
     print("Incorrect letters: " + "-".join(incorrect_letters))
-    print(f"Tries: {tries}")
-    print("\n" + "*" * 20 + "\n")
+    print(f"You have {tries} tries left")
+    print("\n" + "^" * 20 + "\n")
     letter = ask_letter()
     tries, over, right_answers = check_letter(
         letter, word, tries, right_answers)
