@@ -93,7 +93,7 @@ def check_letter(chosen_letter, hidden_word, tries, matches):
 
 def lose():
     print("You dont have any tries left\n")
-    print("The hidden word was" + word)
+    print("The hidden word was:" ' ' + word)
 
     return True
 
@@ -118,3 +118,6 @@ while not game_over:
     print(f"Tries: {tries}")
     print("\n" + "*" * 20 + "\n")
     letter = ask_letter()
+    tries, over, right_answers = check_letter(
+        letter, word, tries, right_answers)
+    game_over = over
