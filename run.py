@@ -86,10 +86,9 @@ def check_letter(chosen_letter, hidden_word, tries, matches):
     if tries == 0:
         end = lose()
     elif matches == unique_letters:
-        end = win(hidden_word)    
+        end = win(hidden_word)
 
     return tries, end, matches
-
 
 
 def lose():
@@ -99,3 +98,8 @@ def lose():
     return True
 
 
+def win(revealed_word):
+    show_new_board(revealed_word)
+    print("Congratulations, you guessed the word!")
+
+    return True
