@@ -105,9 +105,16 @@ def win(revealed_word):
     return True
 
 
-"""Joining the functions"""
-
-
 word, unique_letters = choose_word(words)
 
 
+"""Calling the functions by Joining the functions"""
+
+while not game_over:
+    print("\n" + "*" * 20 + "\n")
+    show_new_board(word)
+    print("\n")
+    print("Incorrect letters: " + "-".join(incorrect_letters))
+    print(f"Tries: {tries}")
+    print("\n" + "*" * 20 + "\n")
+    letter = ask_letter()
