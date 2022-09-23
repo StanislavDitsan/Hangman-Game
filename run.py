@@ -64,3 +64,29 @@ def show_new_board(choose_word):
             hidden_list.append("-")
 
     print(" ".join(hidden_list))
+
+
+"""Checking if the letter the user entered
+matches with the hidden word. And every
+time the function checks, it will complete
+the list of correct and incorrect words.
+This function will also check if the user has one try or less."""
+
+
+def check_letter(chosen_letter, hidden_word, tries, matches):
+    end = False
+
+    if chosen_letter in hidden_word:
+        correct_letters.append(chosen_letter)
+        matches += 1
+    else:
+        incorrect_letters.append(chosen_letter)
+        tries -= 1
+
+    if tries == 0:
+        end = lose()
+    elif matches == unique_letters:
+        end = win(hidden_word)    
+
+    return tries, end, matches
+                
