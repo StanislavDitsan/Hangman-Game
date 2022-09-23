@@ -89,4 +89,13 @@ def check_letter(chosen_letter, hidden_word, tries, matches):
         end = win(hidden_word)    
 
     return tries, end, matches
-                
+
+
+
+def lose():
+    print("You dont have any tries left\n")
+    print("The hidden word was" + word)
+
+    return True
+
+
