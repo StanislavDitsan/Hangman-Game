@@ -18,6 +18,46 @@ tries = 6
 right_answers = 0
 game_over = False
 
+
+def print_hangman(wrong):
+    if wrong == 0:
+        print("\n+---+")
+        print(" O--\|")
+        print("/|\  |")
+        print("/ \  |")
+        print("    ===\n")
+    elif wrong == 5:
+        print("\n+---+")
+        print(" O  |")
+        print("    |")
+        print("    |")
+        print("   ===\n")
+    elif wrong == 4:
+        print("\n+---+")
+        print(" O  |")
+        print(" |  |")
+        print("    |")
+        print("   ===\n")
+    elif wrong == 3:
+        print("\n+---+")
+        print(" O   |")
+        print("/|   |")
+        print("     |")
+        print("    ===\n")
+    elif wrong == 2:
+        print("\n+---+")
+        print(" O   |")
+        print("/|\  |")
+        print("/    |")
+        print("    ===\n")
+    elif wrong == 1:
+        print("\n+---+")
+        print(" O   |")
+        print("/|\  |")
+        print("/ \  |")
+        print("    ===\n")
+
+
 """This function will make the system
 choose a random word from the list."""
 
@@ -82,6 +122,7 @@ def check_letter(chosen_letter, hidden_word, tries, matches):
     else:
         incorrect_letters.append(chosen_letter)
         tries -= 1
+        print_hangman(tries)
 
     if tries == 0:
         end = lose()
@@ -93,7 +134,8 @@ def check_letter(chosen_letter, hidden_word, tries, matches):
 
 def lose():
     print("You dont have any tries left\n")
-    print("The hidden word was:" ' ' + word)
+    print("GAME IS OVER!\n")
+    print("The hidden word was:" " " + word)
 
     return True
 
