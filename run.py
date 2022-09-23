@@ -103,3 +103,11 @@ def win(revealed_word):
     print("Congratulations, you guessed the word!")
 
     return True
+
+
+"""Joining the functions"""
+
+
+word, unique_letters = choose_word(words)
+
+
