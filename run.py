@@ -1,4 +1,8 @@
 from random import choice
+import pyfiglet
+
+ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
+print(ascii_banner)
 
 words = [
     "zombie",
