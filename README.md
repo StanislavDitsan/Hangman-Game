@@ -1,31 +1,34 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Hangman Game](readme-files/banner.png)
 
-Welcome STANNIDITSANNI,
+**Hangman** is a classic word game in which the aim is to discover the missing word.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+### How to play?
+You will be shown a number of blank areas that represent the missing letters you must discover.
+To guess a letter, use the keyboard.
+If your selected letter appears in the response, all locations where that letter appears will be disclosed.
+After revealing multiple letters, you might be able to guess the solution and fill in the missing letters.
+**Be warned**: every time you guess a letter incorrectly, you lose a life and the hangman appears in pieces. 
 
-## Reminders
+ 
+#### Here is the live version of Hangman Game click [here](https://hangmangamepp3.herokuapp.com/)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+# Table of Content
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- [Features](#features)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# Features
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+Existing Features
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+- Accept user name 
+- Welcome the user by announcing their name 
+- Inform the user of how many attempts they have in the game before the game ends 
+- Display current tries 
+- Display incorrect letters
+- Print the Hangman every time the user enters an incorrect letter
+- Inform the user that a certain letter has previously been used
+- When user run out of attempts, notify the user
+- Alert the user that the game is over
+- If the user loses the game, show the hidden word
+- If the game is won, congratulate the user
