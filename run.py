@@ -23,13 +23,13 @@ right_answers = 0
 game_over = False
 
 """ User name input - accepts only letters"""
-name_input = ''
+name_input = ""
 
 while True:
     name_input = input("Enter Your Name: ")
 
     if not name_input.isalpha():
-        print('Enter only Letters!\n')
+        print("Enter only Letters!\n")
         continue
     else:
         break
