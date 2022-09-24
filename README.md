@@ -23,12 +23,41 @@ Existing Features
 
 - Accept user name 
 - Welcome the user by announcing their name 
-- Inform the user of how many attempts they have in the game before the game ends 
+- Inform the user of how many attempts they have in the game before the game ends
+
+<p align="left">
+ <img src="readme-files/terminal1.png">
+</p>
+
 - Display current tries 
 - Display incorrect letters
 - Print the Hangman every time the user enters an incorrect letter
+
+<p align="left">
+ <img src="readme-files/terminal2.png">
+</p>
+
 - Inform the user that a certain letter has previously been used
+
+<p align="left">
+ <img src="readme-files/terminal3.png">
+</p>
+
 - When user run out of attempts, notify the user
 - Alert the user that the game is over
+
+<p align="left">
+ <img src="readme-files/terminal4.png">
+</p>
+
 - If the user loses the game, show the hidden word
+
+<p align="center">
+ <img src="readme-files/terminal5.png">
+</p>
+
 - If the game is won, congratulate the user
+
+<p align="center">
+ <img src="readme-files/terminal6.png">
+</p>
