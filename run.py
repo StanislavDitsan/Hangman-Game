@@ -139,7 +139,7 @@ def check_letter(chosen_letter, hidden_word, tries, matches):
     if chosen_letter in hidden_word and chosen_letter not in correct_letters:
         correct_letters.append(chosen_letter)
         matches += 1
-    elif check_letter in hidden_word and chosen_letter in correct_letters:
+    elif chosen_letter in hidden_word and chosen_letter in correct_letters:
         print("You have already found that letter, try with another one")
     else:
         incorrect_letters.append(chosen_letter)
