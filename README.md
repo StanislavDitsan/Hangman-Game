@@ -13,7 +13,6 @@ After revealing multiple letters, you might be able to guess the solution and fi
  
 #### Here is the live version of Hangman Game click [here](https://hangmangamepp3.herokuapp.com/)
 
-[^^^](<#totop>)
 
 # Table of Content
 
@@ -43,8 +42,10 @@ After revealing multiple letters, you might be able to guess the solution and fi
 
   - [Deployment on Heroku](#deployment-on-heroku)
 
+- [Acknowledgements](#acknowledgements)
+
   
-- [Credits](#credits)
+
 
 
 
@@ -249,4 +250,6 @@ I had to utilize the [Code Institute Python Essentials Template](https://github.
 - W3Schools is used for problem solving.
 - Slack community for providing answers to my questions.
 
-[^^^](<#totop>)
+# Acknowledgements
+
+Gratitude to my mentor Harry Dhillon, the Code Institute, and the Slack community.
