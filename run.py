@@ -99,7 +99,7 @@ def ask_letter():
     alphabet = "abcdefghijklmnopqrstuvwxyz"
 
     while not is_valid:
-        chosen_letter = input("Please enter a letter!")
+        chosen_letter = input("Please enter a letter: ")
 
         if chosen_letter in alphabet and len(chosen_letter) == 1:
             is_valid = True
