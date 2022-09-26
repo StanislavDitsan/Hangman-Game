@@ -5,16 +5,22 @@ ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
 print(ascii_banner)
 
 words = [
-    "zombie",
+    "wristwatch",
     "adoption",
     "confront",
     "process",
     "establish",
-    "head",
+    "transcript",
     "worth",
     "kidney",
-    "mole",
+    "numbskull",
     "tablet",
+    "witchcraf",
+    "fishhook",
+    "knapsack",
+    "espionage",
+    "quizzes"
+
 ]
 correct_letters = []
 incorrect_letters = []
