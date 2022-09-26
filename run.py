@@ -4,6 +4,16 @@ import pyfiglet
 ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
 print(ascii_banner)
 
+print("How to play the game?\n")
+print('''
+You will be shown a number of blank areas
+They represent the missing letters you must discover.
+To guess a letter, use the keyboard.
+If your selected letter appears in the response,
+all locations where that letter appears will be disclosed.\n''')
+print('''Be warned!\nEvery time you guess a letter incorrectly,
+you lose a life and the hangman appears in pieces.\n''')
+
 words = [
     "wristwatch",
     "adoption",
@@ -41,15 +51,6 @@ while True:
         break
 
 print("\nHello", name_input, "\nWelcome to Hangman Game!\n")
-print("How to play the game?\n")
-print('''
-You will be shown a number of blank areas
-They represent the missing letters you must discover.
-To guess a letter, use the keyboard.
-If your selected letter appears in the response,
-all locations where that letter appears will be disclosed.\n''')
-print('''Be warned!\nEvery time you guess a letter incorrectly,
-you lose a life and the hangman appears in pieces.\n''')
 print("Try to guess the word in under six attempts!\n")
 print("Good luck =)")
 print("---------------------------------------------")
