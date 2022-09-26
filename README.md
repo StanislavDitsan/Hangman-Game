@@ -227,9 +227,9 @@ See congratulation alert if I win the game.
 
 - If the game is won, the user will be informed.
 
+<p align="center">
  <img src="readme-files/won.png">
 </p>
-
 
 ## I manually tested the project by performing the following:
 
