@@ -242,7 +242,7 @@ See congratulation alert if I win the game.
 ### Validator Testing 
 
 - [PEP8](http://pep8online.com/) returned no problems
-<p align="left">
+<p align="center">
  <img src="readme-files/pep8.png">
 </p>
 
