@@ -3,8 +3,7 @@ import pyfiglet
 
 ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
 print(ascii_banner)
-
-print("How to play the game?\n")
+print("How to play the game?")
 print('''
 You will be shown a number of blank areas
 They represent the missing letters you must discover.

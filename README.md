@@ -1,4 +1,4 @@
-![Hangman Game](readme-files/banner.png) 
+![Hangman Game](readme-files/hangmanpp3.png) 
 
 **Hangman** is a classic terminal based word game in which the aim is to discover the missing word.
 
@@ -25,6 +25,9 @@ After revealing multiple letters, you might be able to guess the solution and fi
 - [Technologies Used and Tools](#technologies-used-and-tools)
 
 - [Testing](#testing)
+
+  - [User Testing](#user-testing)
+
   - [Validator Testing](#validator-testing)
 
   - [Bugs](#bugs)
@@ -55,6 +58,8 @@ After revealing multiple letters, you might be able to guess the solution and fi
 
 # User Experience
 ## As a first time user I am able to:
+
+- See the instructions on how to play the game
 
 - Enter my name to start the game 
 
@@ -150,7 +155,83 @@ Existing Features
 
 # Testing
 
-### I manually tested the project by performing the following:
+# User Testing
+
+See the instructions on how to play the game
+
+- When the terminal is launched, the user can read printed instructions on how to play the game
+
+<p align="center">
+ <img src="readme-files/howtoplay.png">
+</p>
+
+Enter my name to start the game 
+
+Able of seeing my name with greeting
+
+- The user may begin the game after entering their name and seeing their name written with greetings.
+
+<p align="center">
+ <img src="readme-files/username.png">
+</p>
+
+See information about how many tries I have for the game
+
+- The number of tries is shown to the user.
+
+<p align="center">
+ <img src="readme-files/attempts.png">
+</p>
+
+Be able to see printed dashes to guess a word 
+
+See how many tries I still have left before the game is over
+
+Be able to see the list of incorrect letters 
+
+- The user can clearly see the dashes for the hidden word, as well as the number of attempts remaining and the list of incorrect letters.
+
+<p align="center">
+ <img src="readme-files/dashes.png">
+</p>
+
+Be able to see "hangman" being printed on every incorrect guesses letter
+
+- Every time a user selects the incorrect letter, hangman is printed.
+
+<p align="center">
+ <img src="readme-files/hangmanprint.png">
+</p>
+
+Be able to see a warning if I've previously used the same letter.
+
+- If the identical letter has previously been used, the user will receive a notice and will not loose a tries.
+
+<p align="center">
+ <img src="readme-files/letter.png">
+</p>
+
+Able to get a warning indicating I had reached my limit of tries. 
+
+Able to see if the game is over when run out of tries.
+
+Be able to see the hidden world if I lose the game
+
+- If there are no more attempts available, the user can view the number of tries remaining, or if the game is completed, the hangman is totally printed, and the secret word is revealed.
+
+<p align="center">
+ <img src="readme-files/gameover.png">
+</p>
+
+See congratulation alert if I win the game.
+
+- If the game is won, the user will be informed.
+
+ <img src="readme-files/won.png">
+</p>
+
+
+## I manually tested the project by performing the following:
 
 - Checked the code by using a PEP8 to ensure that there are no issues
 
@@ -253,3 +334,12 @@ I had to utilize the [Code Institute Python Essentials Template](https://github.
 # Acknowledgements
 
 Gratitude to my mentor Harry Dhillon, the Code Institute, and the Slack community.
+
+# Other 
+ - During my last steps to complete this project, Validator Testing PEP8 was not accessible to validate my code before submission.
+
+ - As verification, please see the screen photo below.
+
+ <p align="center">
+ <img src="readme-files/pep8online.png">
+</p>
